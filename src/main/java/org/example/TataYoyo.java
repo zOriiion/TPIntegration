@@ -9,7 +9,7 @@ public class TataYoyo {
                 return "Tata Yoyo";
             } else if(i %3 == 0){
                 return "Tata";
-            } else if(i %5 == 0){
+            } else if(i %5 == 1){
                 return "Yoyo";
             } else {
                 return String.valueOf(i);

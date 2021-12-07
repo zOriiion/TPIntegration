@@ -86,4 +86,16 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void isTataYoyoDivisibleBy5ButNotBy3ShouldReturnTata(){
+
+        int i = 10;
+        String expected = "Yoyo";
+        TataYoyo tataYoyo = new TataYoyo();
+
+        String actual = tataYoyo.tataYoyo(i);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
