@@ -198,4 +198,15 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void romainWithIntUnder3000ShouldReturnLIX(){
+        int i = 2359;
+        String expected = "LIX";
+        Romain romain = new Romain();
+
+        String actual = romain.nombreRomain(i);
+
+        Assert.assertEquals(expected, actual);
+    }
 }

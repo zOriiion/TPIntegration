@@ -6,6 +6,46 @@ public class Romain {
 
         String nombreConverti = "";
 
+        if (i % 10000 == 3000) {
+            nombreConverti += "MMM";
+        }
+        else if (i % 10000 >= 2000 && i % 10000 < 3000) {
+            nombreConverti += "MM";
+        }
+        else if (i % 10000 >= 1000 && i % 10000 < 2000) {
+            nombreConverti += "M";
+        }
+
+
+        if (i % 1000 >= 900 && i % 1000 < 1000) {
+            nombreConverti += "CM";
+        }
+        else if (i % 1000 >= 800 && i % 1000 < 900) {
+            nombreConverti += "DCCC";
+        }
+        else if (i % 1000 >= 700 && i % 1000 < 800) {
+            nombreConverti += "DCC";
+        }
+        else if (i % 1000 >= 600 && i % 1000 < 700) {
+            nombreConverti += "DC";
+        }
+        else if (i % 1000 >= 500 && i % 1000 < 600) {
+            nombreConverti += "D";
+        }
+        else if (i % 1000 >= 400 && i % 1000 < 500) {
+            nombreConverti += "CD";
+        }
+        else if (i % 1000 >= 300 && i % 1000 < 400) {
+            nombreConverti += "CCC";
+        }
+        else if (i % 1000 >= 200 && i % 1000 < 300) {
+            nombreConverti += "CC";
+        }
+        else if (i % 1000 >= 100 && i % 1000 < 200) {
+            nombreConverti += "C";
+        }
+
+
         if (i % 100 >= 90 && i % 100 < 100)
         {
             nombreConverti += "XC";
