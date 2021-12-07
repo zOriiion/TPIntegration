@@ -200,9 +200,9 @@ public class AppTest {
     }
 
     @Test
-    public void romainWithIntUnder3000ShouldReturnLIX(){
+    public void romainWithIntUnder3000ShouldReturnMMCCCLIX(){
         int i = 2359;
-        String expected = "LIX";
+        String expected = "MMCCCLIX";
         Romain romain = new Romain();
 
         String actual = romain.nombreRomain(i);
