@@ -187,4 +187,15 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void romainWithIntUnder100ShouldReturnVIX(){
+        int i = 59;
+        String expected = "VIX";
+        Romain romain = new Romain();
+
+        String actual = romain.nombreRomain(i);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
