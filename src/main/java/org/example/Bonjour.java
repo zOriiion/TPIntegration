@@ -33,8 +33,11 @@ public class Bonjour {
                 }
                 String finalString = "";
 
-                if (lowerName.size() >= 1) {
+                if(lowerName.size() == 1){
                     finalString += "Bonjour, " + lowerName.get(0) + ".";
+                }
+                if(lowerName.size() > 1) {
+                    finalString += "Bonjour";
                     for (int i = 0; i < lowerName.size() - 1; i++) {
                        finalString += ", " + lowerName.get(i);
                     }

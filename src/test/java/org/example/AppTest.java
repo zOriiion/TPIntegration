@@ -147,7 +147,7 @@ public class AppTest {
     @Test
     public void bonjourWith2NamesShouldReturnBonjourTifaEtAerith(){
         String name = "Tifa,Aerith";
-        String expected = "Bonjour, Tifa et Aerith";
+        String expected = "Bonjour, Tifa et Aerith.";
         Bonjour bonjour = new Bonjour();
 
         String actual = bonjour.saluer(name);
@@ -158,7 +158,7 @@ public class AppTest {
     @Test
     public void bonjourWithInfiniteNamesShouldReturnBonjourCloudTifaEtAerith(){
         String name = "Cloud,Tifa,Aerith";
-        String expected = "Bonjour, Cloud, Tifa et Aerith";
+        String expected = "Bonjour, Cloud, Tifa et Aerith.";
         Bonjour bonjour = new Bonjour();
 
         String actual = bonjour.saluer(name);
