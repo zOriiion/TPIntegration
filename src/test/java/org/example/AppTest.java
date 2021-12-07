@@ -100,10 +100,10 @@ public class AppTest {
     }
 
     @Test
-    public void isTataYoyoNotDivisibleBy3And5ShouldReturnTata(){
+    public void isTataYoyoNotDivisibleBy3And5ShouldReturnInt(){
 
-        int i = 10;
-        String expected = "Yoyo";
+        int i = 13;
+        String expected = String.valueOf(i);
         TataYoyo tataYoyo = new TataYoyo();
 
         String actual = tataYoyo.tataYoyo(i);
