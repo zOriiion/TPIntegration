@@ -1,12 +1,18 @@
 package org.example;
 
+import java.util.Locale;
+
 public class Bonjour {
 
     public String saluer(String name){
         if(name.isEmpty()){
             return "Bonjour, l'ami";
         } else {
-            return "Bonjour, " + name;
+            if(name.equals(name.toLowerCase(Locale.ROOT))){
+                return "BONJOUR, " + name;
+            } else {
+                return "Bonjour, " + name;
+            }
         }
     }
 }

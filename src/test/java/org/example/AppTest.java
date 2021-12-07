@@ -132,4 +132,15 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void bonjourWithUpperCaseShouldReturnBONJOURBARRET(){
+        String name = "BARRET";
+        String expected = "BONJOUR, BARRET";
+        Bonjour bonjour = new Bonjour();
+
+        String actual = bonjour.saluer(name);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
