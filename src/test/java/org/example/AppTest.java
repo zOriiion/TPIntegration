@@ -154,4 +154,15 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void bonjourWithInfiniteNamesShouldReturnBonjourCloudTifaEtAerith(){
+        String name = "Cloud,Tifa,Aerith";
+        String expected = "Bonjour, Cloud,Tifa et Aerith";
+        Bonjour bonjour = new Bonjour();
+
+        String actual = bonjour.saluer(name);
+
+        Assert.assertEquals(expected, actual);
+    }
 }

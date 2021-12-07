@@ -17,7 +17,12 @@ public class Bonjour {
                     return "Bonjour, " + name;
                 }
             } else {
-                return "Bonjour, " + allName[0] + " et " + allName[1];
+                String finalString = "Bonjour, ";
+                for(int i = 0; i < allName.length - 2; i++){
+                    finalString += allName[i] + ", ";
+                }
+                finalString += allName[allName.length - 2] + " et " + allName[allName.length - 1];
+                return finalString;
             }
         }
     }
