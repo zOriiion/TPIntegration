@@ -8,7 +8,7 @@ public class Bonjour {
         if(name.isEmpty()){
             return "Bonjour, l'ami";
         } else {
-            if(name.equals(name.toLowerCase(Locale.ROOT))){
+            if(name.equals(name.toUpperCase(Locale.ROOT))){
                 return "BONJOUR, " + name;
             } else {
                 return "Bonjour, " + name;
