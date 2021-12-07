@@ -44,7 +44,7 @@ public class AppTest
     public void isTataYoyoIntUnder1ShouldReturnNombreInvalide(){
 
         int i = -5;
-        String expected = "Nombr invalide";
+        String expected = "Nombre invalide";
         TataYoyo tataYoyo = new TataYoyo();
 
         String actual = tataYoyo.tataYoyo(i);
