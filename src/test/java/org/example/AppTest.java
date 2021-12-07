@@ -169,7 +169,7 @@ public class AppTest {
     @Test
     public void bonjourWithInfiniteNamesCountingUpperShouldReturnBonjourCloudTifaEtAerithETBONJOURBARRETETFABIEN(){
         String name = "Cloud,Tifa,Aerith,BARRET,FABIEN";
-        String expected = "Bonjour, Cloud, Tifa et Aerith. ET BONJOUR, BARRET ET FABIEN";
+        String expected = "Bonjour, Cloud, Tifa et Aerith. ET BONJOUR, BARRET ET FABIEN !";
         Bonjour bonjour = new Bonjour();
 
         String actual = bonjour.saluer(name);
