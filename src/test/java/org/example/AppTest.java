@@ -79,7 +79,7 @@ public class AppTest {
     public void isTataYoyoDivisibleBy3ButNotBy5ShouldReturnTata(){
 
         int i = 9;
-        String expected = "Tata Yoyo";
+        String expected = "Tata";
         TataYoyo tataYoyo = new TataYoyo();
 
         String actual = tataYoyo.tataYoyo(i);
