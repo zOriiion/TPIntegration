@@ -8,10 +8,16 @@ public class Bonjour {
         if(name.isEmpty()){
             return "Bonjour, l'ami";
         } else {
-            if(name.equals(name.toUpperCase(Locale.ROOT))){
-                return "BONJOUR, " + name;
+            String[] allName = name.split(",");
+            if(allName.length == 1) {
+                name = allName[0];
+                if (name.equals(name.toUpperCase(Locale.ROOT))) {
+                    return "BONJOUR, " + name;
+                } else {
+                    return "Bonjour, " + name;
+                }
             } else {
-                return "Bonjour, " + name;
+                return "Bonjour, " + allName[0] + " et " + allName[1];
             }
         }
     }

@@ -143,4 +143,15 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void bonjourWith2NamesShouldReturnBonjourTifaEtAerith(){
+        String name = "Tifa,Aerith";
+        String expected = "Bonjour, Tifa, Aerith";
+        Bonjour bonjour = new Bonjour();
+
+        String actual = bonjour.saluer(name);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
