@@ -39,4 +39,16 @@ public class AppTest
         boolean isLeapYears = leapYears.isLeapYears(year);
         Assert.assertFalse(isLeapYears);
     }
+
+    @Test
+    public void isTataYoyoIntUnder1ShouldReturnNombreInvalide(){
+
+        int i = -5;
+        String expected = "Nombr invalide";
+        TataYoyo tataYoyo = new TataYoyo();
+
+        String actual = tataYoyo.tataYoyo(i);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
