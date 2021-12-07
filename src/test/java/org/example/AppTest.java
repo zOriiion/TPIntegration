@@ -110,4 +110,15 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void bonjourWithNameShouldReturnBonjourCloud(){
+        String name = "Cloud";
+        String expected = "Bonjour, Cloud";
+        Bonjour bonjour = new Bonjour();
+
+        String actual = bonjour.saluer(name);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
