@@ -189,9 +189,9 @@ public class AppTest {
     }
 
     @Test
-    public void romainWithIntUnder100ShouldReturnVIX(){
+    public void romainWithIntUnder100ShouldReturnLIX(){
         int i = 59;
-        String expected = "VIX";
+        String expected = "LIX";
         Romain romain = new Romain();
 
         String actual = romain.nombreRomain(i);
