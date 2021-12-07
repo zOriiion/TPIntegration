@@ -51,4 +51,16 @@ public class AppTest
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void isTataYoyoIntUpper50ShouldReturnNombreInvalide(){
+
+        int i = 72;
+        String expected = "Nombre invalide";
+        TataYoyo tataYoyo = new TataYoyo();
+
+        String actual = tataYoyo.tataYoyo(i);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
