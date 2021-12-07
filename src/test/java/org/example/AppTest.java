@@ -176,4 +176,15 @@ public class AppTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void romainWithIntUnder10ShouldReturnIX(){
+        int i = 9;
+        String expected = "IX";
+        Romain romain = new Romain();
+
+        String actual = romain.nombreRomain(i);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
