@@ -5,8 +5,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AppTest 
-{
+public class AppTest {
 
     @Test
     public void isLeapYearsYearDivisibleBy400ShouldReturnTrue() {
@@ -41,7 +40,7 @@ public class AppTest
     }
 
     @Test
-    public void isTataYoyoIntUnder1ShouldReturnNombreInvalide(){
+    public void isTataYoyoIntUnder1ShouldReturnNombreInvalide() {
 
         int i = -5;
         String expected = "Nombre invalide";
@@ -53,10 +52,22 @@ public class AppTest
     }
 
     @Test
-    public void isTataYoyoIntUpper50ShouldReturnNombreInvalide(){
+    public void isTataYoyoIntUpper50ShouldReturnNombreInvalide() {
 
         int i = 72;
         String expected = "Nombre invalide";
+        TataYoyo tataYoyo = new TataYoyo();
+
+        String actual = tataYoyo.tataYoyo(i);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void isTataYoyoDivisibleBy3And5ShouldReturnTataYoyo(){
+
+        int i = 15;
+        String expected = "Tata Yoy";
         TataYoyo tataYoyo = new TataYoyo();
 
         String actual = tataYoyo.tataYoyo(i);
